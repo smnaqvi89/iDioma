@@ -24,8 +24,9 @@ export default function (store) {
     dispatch(actions.addMsg(msg));
   });
 
-  socket.on('new user', data => {
-    dispatch(actions.incrementOnlineNow(data.roomId));
+  socket.on('online now', roomId => {
+    console.log('got it');
+    dispatch(actions.incrementOnlineNow(roomId));
   });
 }
 
