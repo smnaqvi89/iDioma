@@ -36,3 +36,6 @@ const Rooms = ({ selfId, rooms, handleRoomChange, roomDeleter }) => (
 );
 
 export default Rooms;
+
+/* TODO: Rooms should be linked lists
+room users should be pointers to pairs */
