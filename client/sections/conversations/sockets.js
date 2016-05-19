@@ -40,5 +40,4 @@ export default function (store) {
 TODO: join new room
 new message incoming should open new room
 get others online now
-leave room
 */
