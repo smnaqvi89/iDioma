@@ -51,6 +51,7 @@ const Conversations = ({ self, rooms, inputText, handleRoomChange, roomDeleter, 
   return (
     <div className="chatapp">
       <link rel="stylesheet" href="/css/chat.css" media="screen" title="no title" charset="utf-8"></link>
+      <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'></link>
       <div className="container clearfix">
         <div className="people-list" id="people-list">
           <div className="search">
@@ -62,11 +63,11 @@ const Conversations = ({ self, rooms, inputText, handleRoomChange, roomDeleter, 
         
         <div className="chat">
           <div className="chat-header clearfix">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" alt="avatar" />
+            <img src="" />
             
             <div className="chat-about">
-              <div className="chat-with">Chat with Vincent Porter</div>
-              <div className="chat-num-messages">already 1 902 messages</div>
+              <div className="chat-with">Chat with</div>
+              <div className="chat-num-messages">100 messages</div>
             </div>
             <i className="fa fa-star"></i>
           </div>
@@ -127,15 +128,7 @@ const Conversations = ({ self, rooms, inputText, handleRoomChange, roomDeleter, 
             
           </div>
           
-          <div className="chat-message clearfix">
-            <textarea name="message-to-send" id="message-to-send" placeholder="Type your message" rows="3"></textarea>
-                    
-            <i className="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
-            <i className="fa fa-file-image-o"></i>
-            
-            <button>Send</button>
-
-          </div>
+          <Input />
           
         </div>
         

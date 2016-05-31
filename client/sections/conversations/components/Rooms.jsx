@@ -14,7 +14,7 @@ const nameMaker = (users) => {
 const Room = ({ selfId, room, handleRoomChange, roomDeleter, index }) => (
 
   <li className="clearfix">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01.jpg" alt="avatar" />
+    <img src={room.users[0].photoUrl} className="profilePic" alt="avatar" />
     <div className="about">
       <div className="name">{nameMaker(room.users)}</div>
       <div className="status">
