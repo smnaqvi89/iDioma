@@ -50,17 +50,8 @@ const Conversations = ({ self, rooms, inputText, handleRoomChange, roomDeleter, 
     
   return (
     <div className="chatapp">
-      <div>
-        <Rooms rooms={rooms} currentRoom={currRoom} handleRoomChange={handleRoomChange} roomDeleter={roomDeleter} selfId={self.id} />
-      </div>
-      <div>
-        <div>
-          <Messages usersKey={currRoom.usersKey} messages={currRoom.messages || []} />
-        </div>
-        <Input inputText={inputText} clickHandler={submitMsg} handleTextInput={handleTextInput} />
-        <Button clickHandler={submitMsg} label='Send' type='action' />
-        {videoRequestButton}
-      </div>
+      <link rel="stylesheet" href="/css/chat.css" media="screen" title="no title" charset="utf-8"></link>
+      {videoRequestButton}
       {waitingMessage}
       {errorMessageHolder}
     </div>
@@ -68,3 +59,14 @@ const Conversations = ({ self, rooms, inputText, handleRoomChange, roomDeleter, 
 };
 
 export default Conversations;
+
+// <div>
+//   <Rooms rooms={rooms} currentRoom={currRoom} handleRoomChange={handleRoomChange} roomDeleter={roomDeleter} selfId={self.id} />
+// </div>
+// <div>
+//   <div>
+//     <Messages usersKey={currRoom.usersKey} messages={currRoom.messages || []} />
+//   </div>
+//   <Input inputText={inputText} clickHandler={submitMsg} handleTextInput={handleTextInput} />
+//   <Button clickHandler={submitMsg} label='Send' type='action' />
+// </div>
